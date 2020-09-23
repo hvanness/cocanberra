@@ -2,10 +2,14 @@ body {
   margin: 0;
   font-size: 29px;
   line-height: 1.6;
-  font-family: sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-
+.wrapper {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 20px;
+}
 
 a {
   color: inherit;
@@ -14,49 +18,31 @@ a {
 
 .logo {
   width: 100%;
-  padding-left: 10px;
+  position: fixed;
+  top: 0;
+  text-decoration: none;
 }
 
 .co {
-  margin: 40px 10px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   font-family: NothingYouCouldDo-Regular;
   font-size: 40px;
+  display: inline-block;
 }
 
 .canberra {
-  margin: 35px 56px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
   font-family: Okomito-Medium;
   font-size: 40px;
+  display: inline-block;
 }
 
-.co a {
-  text-decoration: none;
-}
-
-.canberra a { 
-  text-decoration: none;
-}
 
 .intro {
   font-size: 40px;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 100px 0;
+  margin: 70px 0;
+  line-height: 40pt;
 }
 
-@media (max-width: 760px) {
-  .intro {
-    font-size: 40px;
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 100px 0;
-    line-height: 40pt;
-  }
-}
 
 .menu {
   text-align: center;
