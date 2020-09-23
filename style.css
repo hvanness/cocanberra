@@ -6,7 +6,7 @@ body {
 }
 
 .wrapper {
-  max-width: 600px;
+  max-width: 760px;
   margin: auto;
   padding: 0 20px;
 }
@@ -18,7 +18,6 @@ a {
 
 .logo {
   width: 100%;
-  position: fixed;
   top: 0;
   text-decoration: none;
 }
@@ -39,10 +38,23 @@ a {
 .intro {
   font-size: 40px;
   font-family: Helvetica, Arial, sans-serif;
-  margin: 70px 0;
   line-height: 40pt;
 }
 
+.image {
+  display: flex;
+  margin: 40px 0;
+}
+
+.ouraims {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.aboutcontent {
+  font-size: 40px;
+  font-weight: normal;
+}
 
 .menu {
   text-align: center;
@@ -105,8 +117,6 @@ hr {
 footer {
   text-align: center;
   padding: 30px;
-  background: #000;
-  color: #fff;
 }
 
 .view_all_cont:after {
