@@ -1,9 +1,11 @@
 body {
   margin: 0;
-  font-size: 19px;
+  font-size: 29px;
   line-height: 1.6;
   font-family: sans-serif;
 }
+
+
 
 a {
   color: inherit;
@@ -11,34 +13,48 @@ a {
 }
 
 .logo {
-  margin: 40px 40px 0;
-  font-size: 30px;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.co {
+  margin: 40px 10px 0;
   position: fixed;
   top: 0;
   left: 0;
+  font-family: NothingYouCouldDo-Regular;
+  font-size: 40px;
 }
 
-.logo a {
+.canberra {
+  margin: 35px 56px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: Okomito-Medium;
+  font-size: 40px;
+}
+
+.co a {
   text-decoration: none;
 }
 
-@media (max-width: 1260px) {
-  .logo {
-    position: static;
-    text-align: center;
-  }
+.canberra a { 
+  text-decoration: none;
 }
 
 .intro {
   font-size: 40px;
-  font-weight: 600;
-  margin: 200px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 100px 0;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 760px) {
   .intro {
-    font-size: 30px;
-    margin: 50px 0;
+    font-size: 40px;
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 100px 0;
+    line-height: 40pt;
   }
 }
 
@@ -50,10 +66,12 @@ a {
 
 .menu_item {
   display: inline-block;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0 30px;
   text-decoration: none;
+  font-family: Okomito-Medium;
 }
+
 
 @media (max-width: 775px) {
   .menu {
@@ -125,3 +143,8 @@ footer {
   display: block;
   text-decoration: underline;
 }
+
+
+@font-face { font-family: NothingYouCouldDo-Regular; src: url('fonts/NothingYouCouldDo-Regular.TTF'); } 
+@font-face { font-family: Okomito-Medium; src: url('fonts/Okomito-Medium.TTF'); } 
+
