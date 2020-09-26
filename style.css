@@ -42,17 +42,18 @@ a {
 }
 
 .image {
-  display: flex;
+  display: block;
+  width: 100%;
   margin: 40px 0;
 }
 
 .ouraims {
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 32px;
+  font-weight: normal;
 }
 
 .aboutcontent {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: normal;
 }
 
