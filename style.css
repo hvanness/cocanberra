@@ -66,6 +66,12 @@ a {
   font-size: 44px;
 }
 
+.content h2 {
+  font-family: NothingYouCouldDo-Regular;
+  font-size: 44px;
+  margin-bottom: 0;
+}
+
 .content {
   font-size: 40px;
   font-weight: normal;
