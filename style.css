@@ -73,6 +73,11 @@ a {
   background-attachment: fixed;
 }
 
+.image_x {
+  background-image: url("/images/fungi.jpg");
+  background-position: center -295px;
+}
+
 .heading {
   font-family: NothingYouCouldDo-Regular;
   font-size: 44px;
