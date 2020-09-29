@@ -24,7 +24,7 @@ a {
 
 .co {
   font-family: NothingYouCouldDo-Regular;
-  font-size: 40px;
+  font-size: 38px;
   display: inline-block;
 }
 
@@ -39,6 +39,20 @@ a {
   font-size: 40px;
   font-family: Helvetica, Arial, sans-serif;
   line-height: 40pt;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.readmore {
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 40pt;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.readmore:hover {
+  text-decoration: underline;
 }
 
 .image {
@@ -47,14 +61,25 @@ a {
   margin: 40px 0;
 }
 
-.ouraims {
-  font-size: 32px;
+.heading {
+  font-family: NothingYouCouldDo-Regular;
+  font-size: 44px;
+}
+
+.content {
+  font-size: 40px;
   font-weight: normal;
 }
 
-.aboutcontent {
-  font-size: 32px;
-  font-weight: normal;
+.contentlinks {
+  font-size: 40px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 40pt;
+  text-decoration: none;
+}
+
+.contentlinks:hover {
+  text-decoration: underline;
 }
 
 .menu {
