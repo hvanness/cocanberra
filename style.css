@@ -60,6 +60,12 @@ a {
   display: block;
   width: 100%;
   margin: 40px 0;
+  padding-top: 100%;
+  width: 100%;
+  background-image: url("/images/CC-broccoli.png");
+  background-position: center 0px;
+  background-clip: border-box;
+  background-attachment: fixed;
 }
 
 .heading {
