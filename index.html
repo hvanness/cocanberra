@@ -22,11 +22,11 @@
 
       <div class='intro'>
         provides support and resources for organisations in Canberra and its surrounds.
-        <div id='intro_read_more' class='readmore'>Read more.</div>
+        <div id='intro_more_button' class='readmore'>Read more.</div>
       </div>
 
 
-      <section id='intro_more'>
+      <section id='intro_more_content'>
         <div>
           <a class='heading'>Our aims are</a>
         </div>
@@ -65,8 +65,8 @@
     </footer>
     <script>
       let intro_show_more = false
-      const intro_more_button = document.getElementById('intro_read_more')
-      const intro_more_content = document.getElementById('intro_more')
+      const intro_more_button = document.getElementById('intro_more_button')
+      const intro_more_content = document.getElementById('intro_more_content')
       intro_more_button.addEventListener('click', function intro_handle_read_more_click () {
         if (!intro_show_more) {
           intro_more_button.innerText = 'Read Less'
