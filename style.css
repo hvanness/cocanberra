@@ -58,11 +58,12 @@ a {
 }
 
 .readmore:hover {
-  border-bottom: 2px solid;
+  text-decoration: underline;
 }
 
 .image {
   display: inline;
+  height: 426px;
 }
 
 .image_x {
@@ -98,7 +99,7 @@ a {
 }
 
 .contentlinks:hover {
-  border-bottom: 2px solid;
+  text-decoration: underline;
 }
 
 .backtotop {
@@ -108,9 +109,6 @@ a {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.backtotop:hover {
-  border-bottom: 2px solid;
-}
 
 .menu {
   float: right;
