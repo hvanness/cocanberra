@@ -71,6 +71,10 @@ a {
   font-weight: normal;
 }
 
+.content p:first-child {
+    margin-top: 0;
+}
+
 .contentlinks {
   font-size: 40px;
   font-family: Helvetica, Arial, sans-serif;
