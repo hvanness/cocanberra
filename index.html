@@ -70,9 +70,18 @@
       const intro_more = document.getElementById('intro_more')
       intro_more.style.display = 'none'
 
+      let show_intro_more = false
       function handle_intro_read_more_click () {
-        intro_read_more.style.display = 'none'
-        intro_more.style.display = 'block'
+        if (!show_intro_more) {
+          intro_read_more.innerText = 'Read Less'
+          intro_more.style.display = 'block'
+          show_intro_more = true
+        }
+        else {
+          intro_read_more.innerText = 'Read More'
+          intro_more.style.display = 'none'
+          show_intro_more = false
+        }
       }
       intro_read_more.addEventListener('click', handle_intro_read_more_click)
     </script>
