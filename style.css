@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+.logo:hover {
+  border-bottom: 2px solid;
+}
+
 .co {
   font-family: NothingYouCouldDo-Regular;
   font-size: 44px;
@@ -33,10 +37,6 @@ a {
   font-family: Okomito-Medium;
   font-size: 46px;
   display: inline-block;
-}
-
-.canberra:hover {
-  text-decoration: underline;
 }
 
 .intro {
@@ -110,12 +110,7 @@ a {
 
 .menu {
   float: right;
-  font-weight: normal;
   margin-top: 35px;
-  font-size: 40px;
-  background-color: black;
-  color: white;
-  padding: 5px;
   cursor: pointer;
 }
 
@@ -123,32 +118,28 @@ a {
   width: 100%
 }
 
-.menu_item {
+.itemscont {
+  padding-bottom: 800px;
+}
+
+.menuitems {
   display: inline-block;
-  font-size: 25px;
-  margin: 0 30px;
+  font-size: 40px;
   text-decoration: none;
-  font-family: Okomito-Medium;
+  font-weight: normal;
+  font-family: Helvetica, Arial, sans-serif;
+  width: 50%;
 }
 
-
-@media (max-width: 775px) {
-  .menu {
-    margin: 20px auto 0;
-    max-width: 300px;
-  }
-  .menu:after {
-    clear: both;
-    content: " ";
-    height: 0;
-    display: block;
-  }
-  .menu_item {
-    float: left;
-    width: 50%;
-    margin: 0;
-  }
+.menuitems:hover {
+  text-decoration: underline;
 }
+  
+.projects {
+  display: inline;
+  width: 50%;
+  font-size: 40px;
+}  
 
 .page {
   padding: 10px;
