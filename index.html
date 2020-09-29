@@ -9,6 +9,7 @@
   </head>
   <body>
     <div class='wrapper'>
+      <img class='image' src="images/CC-broccoli.jpg">
       <a class='logo' href="/">
         <div class='co'>
           Co
@@ -24,9 +25,6 @@
         <div id='intro_read_more' class='readmore'>Read more.</div>
       </div>
 
-      <!--
-      <img class='image' src="images/CC-broccoli.jpg">
-      //-->
 
       <section id='intro_more'>
         <div>
@@ -66,24 +64,23 @@
       &copy; 2020 CoCanberra
     </footer>
     <script>
-      const intro_read_more = document.getElementById('intro_read_more')
-      const intro_more = document.getElementById('intro_more')
-      intro_more.style.display = 'none'
-
-      let show_intro_more = false
-      function handle_intro_read_more_click () {
-        if (!show_intro_more) {
-          intro_read_more.innerText = 'Read Less'
-          intro_more.style.display = 'block'
-          show_intro_more = true
+      let intro_show_more = false
+      const intro_more_button = document.getElementById('intro_read_more')
+      const intro_more_content = document.getElementById('intro_more')
+      intro_more_button.addEventListener('click', function intro_handle_read_more_click () {
+        if (!intro_show_more) {
+          intro_more_button.innerText = 'Read Less'
+          intro_more_content.style.display = 'block'
+          intro_show_more = true
         }
         else {
-          intro_read_more.innerText = 'Read More'
-          intro_more.style.display = 'none'
-          show_intro_more = false
+          intro_more_button.innerText = 'Read More'
+          intro_more_content.style.display = 'none'
+          intro_show_more = false
         }
-      }
-      intro_read_more.addEventListener('click', handle_intro_read_more_click)
+      })
+      intro_more.style.display = 'none'
+
     </script>
   </body>
 </html>
