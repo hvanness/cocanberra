@@ -58,19 +58,11 @@ a {
 }
 
 .readmore:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid;
 }
 
 .image {
-  display: block;
-  width: 100%;
-  margin: 40px 0;
-  padding-top: 51.3%;
-  width: 100%;
-  background-image: url("/images/CC-broccoli.png");
-  background-position: center 0px;
-  background-clip: border-box;
-  background-attachment: fixed;
+  display: inline;
 }
 
 .image_x {
@@ -106,18 +98,18 @@ a {
 }
 
 .contentlinks:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid;
 }
 
 .backtotop {
   font-size: 40px;
   font-weight: normal;
   text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .backtotop:hover {
-  text-decoration: underline;
-  color: black;
+  border-bottom: 2px solid;
 }
 
 .menu {
@@ -135,16 +127,15 @@ a {
 }
 
 .menuitems {
-  display: inline-block;
+  display: inline;
   font-size: 40px;
   text-decoration: none;
   font-weight: normal;
   font-family: Helvetica, Arial, sans-serif;
-  width: 50%;
 }
 
 .menuitems:hover {
-  text-decoration: underline;
+  border-bottom: 2px solid;
 }
   
 .projects {
@@ -163,20 +154,6 @@ section {
   margin: 50px 0;
 }
 
-@media (max-width: 767px) {
-  section {
-    margin: 55px 0;
-  }
-}
-
-li {
-  margin-top: 20px;
-}
-
-hr {
-  border-top: 1px solid #000;
-  border-bottom: none;
-}
 
 footer {
   text-align: center;
