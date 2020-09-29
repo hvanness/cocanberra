@@ -21,15 +21,14 @@
 
       <div class='intro'>
         provides support and resources for organisations in Canberra and its surrounds.
-        <a class='readmore' href='/vision and mission.html'>Read more.</a>
+        <div id='intro_read_more' class='readmore'>Read more.</div>
       </div>
-<br>
+
+      <!--
       <img class='image' src="images/CC-broccoli.jpg">
+      //-->
 
-      <section>
-
-        <div class='view_all_cont'>
-        </div>
+      <section id='intro_more'>
         <div>
           <a class='heading'>Our aims are</a>
         </div>
@@ -66,5 +65,16 @@
     <footer>
       &copy; 2020 CoCanberra
     </footer>
+    <script>
+      const intro_read_more = document.getElementById('intro_read_more')
+      const intro_more = document.getElementById('intro_more')
+      intro_more.style.display = 'none'
+
+      function handle_intro_read_more_click () {
+        intro_read_more.style.display = 'none'
+        intro_more.style.display = 'block'
+      }
+      intro_read_more.addEventListener('click', handle_intro_read_more_click)
+    </script>
   </body>
 </html>
