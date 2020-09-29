@@ -64,6 +64,18 @@ a {
 .image {
   display: block;
   width: 100%;
+  margin: 40px 0;
+  padding-top: 51.3%;
+  width: 100%;
+  background-image: url("/images/CC-broccoli.png");
+  background-position: center 0px;
+  background-clip: border-box;
+  background-attachment: fixed;
+}
+
+.image_x {
+  background-image: url("/images/fungi.jpg");
+  background-position: center -295px;
 }
 
 .heading {
