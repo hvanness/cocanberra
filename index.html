@@ -8,8 +8,19 @@
     <title>CoCanberra</title>
   </head>
   <body>
+    <div id='menu_more_button' class='menu'>Menu</div>
+    <div class='menucont' id='menu_more_content'>
+      <div class='wrapper'>
+        <a class='menuitem' href="/vision_and_mission.html">Vision & Mission</a>
+        <a class='menuitem' href="#">Updates</a>
+        <div class='menudash'>—</div>
+        <a class='menuitemsmall' href="#">Food Connect</a>
+        <a class='menuitemsmall' href="#">Pre-Power</a>
+        <a class='menuitemsmall' href="#">Becoming the Media</a>
+        <a class='menuitemsmall' href="#">NENA Canberra</a>
+      </div>    
+    </div>
     <div class='wrapper'>
-      <div class='image'><img src="images/CC-broccoli.png"></div>
       <a class='logo' href="/">
         <div class='co'>
           Co
@@ -106,6 +117,26 @@
         }
       })
       contact_more_content.style.display = 'none'
+
+    </script>
+<script>
+      let menu_show_more = false
+      const menu_more_button = document.getElementById('menu_more_button')
+      console.log(menu_more_button)
+      const menu_more_content = document.getElementById('menu_more_content')
+      menu_more_button.addEventListener('click', function menu_handle_read_more_click () {
+        if (!menu_show_more) {
+          menu_more_button.innerText = 'Close'
+          menu_more_content.style.display = 'block'
+          menu_show_more = true
+        }
+        else {
+          menu_more_button.innerText = 'Menu'
+          menu_more_content.style.display = 'none'
+          menu_show_more = false
+        }
+      })
+      menu_more_content.style.display = 'none'
 
     </script>
   </body>

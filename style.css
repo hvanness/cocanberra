@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-size: 29px;
-  line-height: 1.6;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -9,6 +8,7 @@ body {
   max-width: 747px;
   margin: auto;
   padding: 0 20px;
+  line-height: 1.6;
 }
 
 a {
@@ -41,16 +41,11 @@ a {
 
 .intro {
   font-size: 40px;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 40pt;
   text-decoration: none;
   font-weight: normal;
 }
 
 .readmore {
-  font-size: 40px;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 40pt;
   text-decoration: none;
   font-weight: normal;
   display: inline;
@@ -87,14 +82,23 @@ a {
   font-weight: normal;
 }
 
+@media (max-width: 767px) {
+  .content {
+    font-size: 30px;
+  } 
+ .content h2 {
+    font-size: 34px;
+  } 
+ .heading {
+    font-size: 34px;
+  } 
+}
+
 .content p:first-child {
     margin-top: 0;
 }
 
 .contentlinks {
-  font-size: 40px;
-  font-family: Helvetica, Arial, sans-serif;
-  line-height: 40pt;
   text-decoration: none;
 }
 
@@ -109,33 +113,61 @@ a {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-
 .menu {
-  float: right;
-  margin-top: 35px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 15px;
+  line-height: 1;
   cursor: pointer;
+  z-index: 1;
+}
+
+.logocont {
+  width: 100%;
+  margin-top: 20px;
 }
 
 .menucont {
-  width: 100%
+  min-height: 100vh;
+  position: fixed;
+  background: white;
+  width: 100%;
+  top: 0;
+  z-index: 0;
+  padding-top: 54px;
 }
 
-.itemscont {
-  padding-bottom: 800px;
-}
-
-.menuitems {
-  display: inline;
+.menuitem {
+  display: block;
   font-size: 40px;
   text-decoration: none;
   font-weight: normal;
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.menuitems:hover {
-  border-bottom: 2px solid;
+
+.menuitem:hover {
+  text-decoration: underline;
 }
-  
+
+.menuitemsmall {
+  display: block;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 300;
+}  
+
+.menuitemsmall:hover {
+  text-decoration: underline;
+}
+
+.menudash {
+  font-weight: 300;
+}
+
 .projects {
   display: inline;
   width: 50%;
@@ -143,7 +175,6 @@ a {
 }  
 
 .page {
-  padding: 10px;
   max-width: 800px;
   margin: 30px auto 30px;
 }
@@ -156,6 +187,13 @@ section {
 footer {
   text-align: center;
   padding: 30px;
+  font-size: 29px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: 19px;
+  } 
 }
 
 .view_all_cont:after {
